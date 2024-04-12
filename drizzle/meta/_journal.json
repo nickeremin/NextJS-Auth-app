@@ -1,0 +1,41 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1712828864323,
+      "tag": "0000_majestic_mother_askani",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1712829149075,
+      "tag": "0001_sloppy_bug",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1712830554396,
+      "tag": "0002_petite_kitty_pryde",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1712854985273,
+      "tag": "0003_breezy_dragon_lord",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1712934513673,
+      "tag": "0004_high_speedball",
+      "breakpoints": true
+    }
+  ]
+}

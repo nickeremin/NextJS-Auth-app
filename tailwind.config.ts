@@ -1,20 +1,40 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  prefix: "",
   theme: {
     extend: {
+      colors: {
+        // Font Colors
+        primary: "rgb(var(--primary))",
+        secondary: "rgb(var(--secondary))",
+        tertiary: "rgb(var(--tertiary))",
+
+        // Background Colors
+        background: {
+          DEFAULT: "rgb(var(--background))",
+        },
+        border: "rgb(var(--border))",
+        ring: "rgb(var(--ring))",
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "auth-background":
+          "url('/public/images/paul-pastourmatzis-mqO0Rf-PUMs-unsplash.jpg')",
+      },
+      boxShadow: {
+        "border-t": "inset 0 1px 0 0 rgb(var(--border))",
+        "border-b": "inset 0 -1px 0 0 rgb(var(--border))",
+        "border-r": "inset -1px 0 0 0 rgb(var(--border))",
+        "border-l": "inset 1px 0 0 0 rgb(var(--border))",
       },
     },
   },
-  plugins: [],
-};
-export default config;
+  plugins: [require("tailwindcss-animate")],
+}
+export default config
